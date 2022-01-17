@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'D2Coding';
+  font-weight: normal;
+  src: url('../font/D2Coding.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'D2Coding';
+  font-weight: bold;
+  src: url('../font/D2Coding-bold.ttf') format('truetype');
+}
+
+/* 모든 페이지에 적용되는 공통 서식 */
+html, body {width: 100%; height: 100%;}
+body {
+  font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+  color: #ccc;
+  background: #aab7c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {text-decoration: none; color: #ccc;}
+
+/* semantic tag */
+header {
+  font-family: 'D2Coding';
+  background: #3c424b;
+}
+footer {
+  background: #1a1e22;
+}
+
+/* tag */
+h3 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 3em;
+}
+em {
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* class name */
+.about {display: flex;}
+.d-none {display: none;}
+.block {display: block;}
+.highlight {font-size: 1.5em;}

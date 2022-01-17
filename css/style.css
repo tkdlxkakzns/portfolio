@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* <header> */
+h1 > img {
+  height: 28px;
+}
+/* </header> */
+
+/* <main> */
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* container-01 */
+.container-01 {
+  font-size: 7em;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.container-01 > h2 {
+  left: 80px;
+  position: absolute;
+  font-size: inherit;
+  opacity: 0;
+}
+.container-01 > h2:first-child {
+  top: 220px;
+}
+.container-01 > h2:nth-child(2) {
+  top: 388px;
+}
+.container-01 > h2:last-child {
+  top: 556px;
+}
+
+/* container-02 */
+.container-02 {
+  display: grid;
+  grid-template:
+  "con-02-h2 con-02-h2 con-02-h2" 64px
+  "introduce profile-img profile" 3fr
+  "skills graphic graphic" 2fr
+  / 2.5fr 1fr 1fr ;
+  font-weight: bold;
+}
+.container-02 > h2 {
+  grid-area: con-02-h2;
+}
+.container-02 .highlight {font-size: 1.5em;}
+.introduce {
+  grid-area: introduce;
+  font-size: 3em;
+  line-height: 2em;
+  transform: translateX(-8px);
+}
+.skills {
+  grid-area: skills;
+  margin-top: 12px;
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+.profile-img {
+  grid-area: profile-img;
+  display: block;
+  width: 280px;
+  border-radius: 12px;
+  /* place-self: center; */
+}
+
+.profile {
+  grid-area: profile;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  line-height: 2.25em;
+  transform: translateX(-60px);
+}
+.profile > p:last-child {
+  transform: translateX(88px);
+}
+
+.graphic {
+  grid-area: graphic;
+  margin-top: 12px;
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+
+/* container-03 */
+.container-03 {
+  display: grid;
+  grid-template:
+  "con-03-h2 con-03-img" 44px
+  "con-03-sec con-03-img" auto
+  / 2fr 3fr;
+}
+.container-03 > h2 {grid-area: con-03-h2;}
+.container-03 > section {
+  grid-area: con-03-sec;
+}
+.container-03 > section > p {
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  line-height: 1.75em;
+}
+.container-03 > img {
+  grid-area: con-03-img;
+  width: 100%; height: 100%;
+}
+
+/* container-04 */
+.container-04 {
+  display: grid;
+  grid-template:
+  "con-04-h2 con-04-img" 44px
+  "con-04-sec con-04-img" auto
+  / 2fr 3fr;
+}
+.container-04 > h2 {grid-area: con-04-h2;}
+.container-04 > section {grid-area: con-04-sec;}
+.container-04 > img {
+  grid-area: con-04-img;
+  width: 100%;
+}
+.container-04 > section > p {
+  margin-bottom: 36px;
+  line-height: 1.75em;
+}
+
+/* contaienr-05 */
+.container-05 {
+  display: grid;
+  grid-template:
+  "con-05-h2 con-05-h2 con-05-h2" 44px
+  "con-05-sec-01 con-05-img con-05-sec-02" auto
+  "con-05-sec-01 con-05-img con-05-sec-02" auto
+  / 1fr 3fr 1fr;
+}
+.container-05 > h2 {grid-area: con-05-h2;}
+.con-05-sec-01 {grid-area: con-05-sec-01;}
+.container-05 > img {
+  grid-area: con-05-img;
+  width: 100%;
+}
+.con-05-sec-01 > em {margin: 0;}
+.con-05-sec-01 > em:first-child {
+  text-indent: 3px;
+  font-size: 1.25em;
+}
+.con-05-sec-01 > em:nth-child(2) {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+.con-05-sec-01 > p {
+  line-height: 1.75em;
+}
+.con-05-sec-02 {
+  grid-area: con-05-sec-02;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-left: 32px;
+}
+.con-05-sec-02 > h3 {font-size: 1.5em; margin-bottom: 20px;}
+.con-05-sec-02 > p {line-height: 1.5em;}
+
+/* container-06 */
+.container-06 {
+  display: grid;
+  grid-template:
+  "con-06-h2" 44px
+  "con-06-sec" 120px
+  "con-06-img" auto
+  / 1fr;
+}
+.container-06 > h2 {grid-area: con-06-h2;}
+.con-06-sec {
+  grid-area: con-06-sec;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.con-06-sec > p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin-left: 80px;
+}
+.con-06-sec > h3 {
+  font-size: 3.75em;
+  letter-spacing: -1px;
+}
+
+.container-06 > img {
+  grid-area: con-06-img;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* </main> */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer > p {
+  margin: 0 60px;
+}

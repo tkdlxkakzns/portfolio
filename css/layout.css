@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+#wrap {
+  position: relative;
+  width: calc(100% - 32px); height: calc(100% - 32px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+header {
+  width: 100%; height: 48px;
+  display: flex;
+  align-items: center;
+}
+main {
+  width: 100%; height: calc(100% - 88px);
+  position: relative;
+}
+footer {
+  width: 100%; height: 40px;
+}
+/* mac os */
+span[class|=mac] {display: block; width: 20px; height: 20px; border-radius: 50%;}
+.mac { display: flex; justify-content: space-between; width: 84px; margin-left: 16px;}
+.mac-red {background: #ff5f5a;}
+.mac-yellow {background: #ffbe2e;}
+.mac-green {background: #2aca44;}
+
+
+/* <header> */
+h1 {
+  margin-left: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h1::after {
+  content: ">";
+  margin-left: 12px;
+}
+h1 > img {
+  transform: translateY(4px);
+}
+
+/* gnb */
+.gnb {
+  display: flex;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.gnb > li {
+  margin-right: 24px;
+}
+/* </header> */
+
+/* <main> */
+/* 슬라이드 서식 */
+.slide-wrapper {
+  position: relative;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+article[class|=container] {
+  width: 100%; height: 100%;
+  background: #21252b;
+  display: none;
+  box-sizing: border-box;
+}
+.container-02,
+.container-03,
+.container-04,
+.container-05,
+.container-06,
+.container-07 {
+  padding: 32px;
+}
+
+/* </main> */
+
+/* <footer> */
+
+/* </footer> */
